@@ -5,12 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./system/style.css">
 </head>
 <body>
-    
-
-
-
+    <section class="row px-1 py-2">
+        <div class="col-md-4">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                     <span class="input-group-text">&#945;= </span>
+                </div>
+                 <input id="burchak" type="number" class="form-control number" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                     <span class="input-group-text">&#176;</span>
+                </div>
+            </div>
+            <div class="" id="burchakMosligi"></div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                     <span class="input-group-text">&#956;= </span>
+                </div>
+                 <input id="myu" type="number" class="form-control number" aria-label="Amount (to the nearest dollar)">
+            </div>
+            <div class="" id="myuMosligi"></div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                     <span class="input-group-text">S= </span>
+                </div>
+                 <input id="yul" type="number" class="form-control number" aria-label="Amount (to the nearest dollar)">
+                 <div class="input-group-append">
+                    <span class="input-group-text">m</span>
+               </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                <span class="btn btn-info" onclick="hisobla()">Hisoblash:</span>
+                </div>
+                <div class="col-md-4" id="vaqt"></div>
+            </div>
+        </div>
+        <div class="col-md-6 offset-md-2">
+            salom
+        </div>
+    </section>
     <script src="./system/app.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
