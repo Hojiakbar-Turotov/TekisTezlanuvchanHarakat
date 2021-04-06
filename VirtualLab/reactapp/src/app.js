@@ -1,13 +1,11 @@
 import React from 'react';
-
+import MyNavbar from './navbar';
 
 
 function OnePage(){
     return (
       <>
-      s
-        {/* <MyNavbar />
-        <Logo /> */}
+        <MyNavbar />
       </>
     )
   }

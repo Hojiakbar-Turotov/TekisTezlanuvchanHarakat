@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirtualLab</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-grid.rtl.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-reboot.rtl.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-utilities.rtl.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav id="NavbarPage" class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Virtual Labaratoriya</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample01">
+                <ul class="navbar-nav me-auto mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Asosiy sahifa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mundarija</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="text-white-50" onclick="navDel()">Menyuni olib tashlash</span>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Sahifalar</a>
+                        <ul class="dropdown-menu text-start" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item text-start" href="#">Kirish</a></li>
+                            <li><a class="dropdown-item text-start" href="#">Ishni boshlash</a></li>
+                            <li><a class="dropdown-item text-start" href="#">Ishni bajarish</a></li>
+                            <li><a class="dropdown-item text-start" href="#">Hulosa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form>
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="OnePage" class="lab">
+        Assalomu-aleykum Virtual labaratoriyaga hush kelibsiz!
+    </div>
+    <div id="TwoPage">
+        <div id="onesection">
+            <p id="height"></p>
+            <p id="qiyaTekislik" class="">ss</p>
+            <style id="style">
+                 :root {
+                    --alfa: 50deg;
+                }
+            </style>
+        </div>
+        <div id="twosection">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>
+                        Berilgan:
+                    </h2>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">H= </span>
+                        </div>
+                        <input id="balandlik" type="number" class="form-control number">
+                        <div class="input-group-append">
+                            <span class="input-group-text">sm</span>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">L= </span>
+                        </div>
+                        <input id="uzunlik" type="number" class="form-control number">
+                        <div class="input-group-append">
+                            <span class="input-group-text">sm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ThreePage">
+
+    </div>
+    <div id="FourPage">
+
+    </div>
+    <footer>
+        <div id="orqaga">
+
+        </div>
+        <div id="oldinga">
+            Ishni boshlash
+        </div>
+    </footer>
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.esm.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./demo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+/* Chrome, Safari, Edge, Opera */
+
+.number::-webkit-outer-spin-button,
+.number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+.number[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+/* TwoPage */
+
+#onesection {
+    position: relative;
+    margin-top: 20px;
+    background-color: #00000009;
+}
+
+#height {
+    width: 1px;
+    margin: 15px;
+    border: 4px solid #000;
+}
+
+#qiyaTekislik {
+    width: 15px;
+    margin: 15px;
+    border: 4px solid #000;
+    transform: rotateZ();
+}

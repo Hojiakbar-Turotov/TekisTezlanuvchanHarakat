@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="./carousel.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+        #myCarousel .carousel-inner .carousel-item {
+            height: 100vh;
+            position: fixed;
+            margin-top: 0;
+            padding: 0;
+            top: 0;
+        }
+        
+        * {
+            color: #000;
+        }
+        
+        pre {
+            color: #ff0000;
+            background-color: #0000ff55;
+        }
+        
+        pre>span {
+            color: #fff;
+        }
+        
+        .span {
+            color: #00ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#00ff5f95"/></svg>
+
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>HTML nima?</h1>
+                        <p>HTML bu belgilash tili hisoblanadi va hozirgi web sahifalarning asosini tashkil qiladi.
+                            <br> Bu til teglar yordamida so'zlashadi.
+                            <br> Misol uchun:
+                            <pre>
+    &#60;html&#62;
+        &#60;head&#62;
+            &#60;title&#62;<span>HTML darsi</span> &#60;/title&#62;
+        &#60;/head&#62;
+        &#60;body&#62;
+            &#60;p&#62; <span>bu shunchaki oddiy matn</span> &#60;/p&#62;
+        &#60;/body&#62;
+    &#60;/html&#62;
+</pre>
+                            <p>
+                                ko'rinib turibdiki bu yerda ko'k yozuvlar teg qoralari esa oddiy so'zlar. <br> teglarni yozishda oddiy qoidaga bo'y sinilgan shunchaki tartib ular tartib bilan ochiladi va yopiladi.
+                                <br><br> HTML kodlari (teglarini) yozish uchun maxsus ishchi muhit (dastur) lar yaratilgan.
+                            </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#00ff5f95"/></svg>
+
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>
+                            Ishchi muhitlar
+                        </h1>
+                        <p>
+                            HTML uchun ikki turdagi ishchi muhitlar mavjud:
+                            <br> 1-bu oddiy ixtisoslashmagan umumiy dasturlar, jumladan, notepad(bloknot) dasturi.
+                            <br> 2-maxsus istisoslashgan VS code, Sublime Text va boshqalar
+                            <br><br>HTML qulayligi uni barcha kompyuterda yozish mumkin va bu borada eng qulay ishchi muhitlardan biri VS code dasturi.
+                            <br><a href="https://az764295.vo.msecnd.net/stable/ea3859d4ba2f3e577a159bc91e3074c5d85c0523/VSCodeUserSetup-x64-1.52.1.exe">Daturni yuklab olish</a> : https://code.visualstudio.com/
+                            <br><br><br>HTML ning o'zi va teglarini https://www.w3schools.com/html/ bu yerda tanishishingiz mumkin. Hozi esa animatsiya jarayoni uchun kerak bo'ladigan belgilash tillaridan biri CSS haqida ham bilsak,
+                            <br> CSS uch turdagi sellektor (to'plam yoki element) va qo'shimcha medialar bilan ishlaydi.
+                            <br>teg sellektori, id sellektori, class sellektori
+                            <br>Biz bu sellektorlarni hamda medialarni qo'llash vaqtida o'rganib olamiz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#00ff5f95"/></svg>
+
+                <div class="container">
+                    <div class="carousel-caption text-start">
+
+                        <h2>
+
+                        </h2>
+                        <h2>
+                            Quida jismning harakat turlarini ko'ramiz:
+                            <section>
+                                <style>
+                                    img {
+                                        transform: translateY(-16px);
+                                    }
+                                    
+                                    hr {
+                                        border: 5px solid #000;
+                                    }
+                                    
+                                    .pastki-chiziq {
+                                        transform: translateY(-32px);
+                                    }
+                                    
+                                    .img1 {
+                                        animation: img1 12s infinite;
+                                    }
+                                    
+                                    @keyframes img1 {
+                                        0% {
+                                            transform: translateY(-16xp);
+                                        }
+                                        100% {
+                                            transform: translate(700px, -16px);
+                                        }
+                                    }
+                                </style>
+                                <hr> 1) <img class="img1" src="./img/image_1.png" alt="Bu yerda jism bor">
+                                <hr class="pastki-chiziq">
+                            </section>
+                            <section>
+                                <style>
+                                    img {
+                                        transform: translateY(-16px);
+                                    }
+                                    
+                                    .img2 {
+                                        animation: img2 12s infinite;
+                                    }
+                                    
+                                    @keyframes img2 {
+                                        0% {
+                                            transform: rotateY(0);
+                                        }
+                                        100% {
+                                            transform: rotateZ(1180deg);
+                                        }
+                                    }
+                                </style>
+                                2) <br><img class="img2" src="./img/image_1.png" alt="Bu yerda jism bor">
+                            </section>
+                            <br><br>
+                            <section>
+                                <style>
+                                    img {
+                                        transform: translateY(-16px);
+                                    }
+                                    
+                                    .img3 {
+                                        animation: img3 7s infinite;
+                                    }
+                                    
+                                    @keyframes img3 {
+                                        0% {
+                                            transform: rotateZ(-45deg);
+                                        }
+                                        50% {
+                                            transform: rotateZ(45deg);
+                                        }
+                                        100% {
+                                            transform: rotateZ(-45deg);
+                                        }
+                                    }
+                                </style>
+                                3) <br> <img class="img3" src="./img/image_1.png" alt="Bu yerda jism bor">
+                            </section>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#00ff5f95"/></svg>
+
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h3>1)</h3>
+                        <pre>
+    &#60;html&#62;
+    &#60;head&#62;
+        &#60;title&#62;<span>Ilgarilanma harakat</span> &#60;/title&#62;
+        &#60;style&#62; <span class="span">
+            img {
+                transform: translateY(-16px);
+            }
+            hr {
+                border: 5px solid #000;
+            }
+            .pastki-chiziq {
+                transform: translateY(-32px);
+            }
+            .img1 {
+                animation: img1 12s infinite;
+            }
+            @keyframes img1 {
+                0% {
+                    transform: translateY(-16xp);
+                }
+                100% {
+                    transform: translate(700px, -16px);
+                }
+            } </span>
+        &#60;/style&#62;
+    &#60;/head&#62;
+    &#60;body&#62;
+        &#60;hr /&#62;
+        &#60;img class="img1" scr="./img/image_1.png" /&#62;
+        &#60;hr class="pastki-chiziq" /&#62;
+    &#60;/body&#62;
+&#60;/html&#62;
+</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#00ff5f95"/></svg>
+
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <pre style="font-size: 20px;">
+&#60;html&#62;
+    &#60;head&#62;
+        &#60;title&#62;<span>Aylanma harakat</span> &#60;/title&#62;
+        &#60;style&#62; <span class="span">
+            .img2 {
+                animation: img2 12s infinite;
+            }
+            @keyframes img2 {
+                0% {
+                    transform: rotateY(0);
+                }
+                100% {
+                    transform: rotateZ(1180deg);
+                }
+            } </span>
+        &#60;/style&#62;
+    &#60;/head&#62;
+    &#60;body&#62;
+        &#60;img class="img2" scr="./img/image_2.png" /&#62;
+    &#60;/body&#62;
+&#60;/html&#62;
+</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#00ff5f95"/></svg>
+
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <pre style="font-size: 18px;">
+&#60;html&#62;
+&#60;head&#62;
+    &#60;title&#62;<span>Aylanma harakat</span> &#60;/title&#62;
+    &#60;style&#62; <span class="span">
+            .img3 {
+                animation: img3 7s infinite;
+            }
+            @keyframes img2 {
+                0% {
+                    transform: rotateZ(-45deg);
+                }
+                50% {
+                    transform: rotateZ(45deg);
+                }
+                100% {
+                    transform: rotateZ(-45deg);
+                }
+            } </span>
+    &#60;/style&#62;
+&#60;/head&#62;
+&#60;body&#62;
+    &#60;img class="img3" scr="./img/image_3.png" /&#62;
+&#60;/body&#62;
+&#60;/html&#62;
+
+</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+
+    <script src="./bootstrap.min.js"></script>
+    <script>
+        $('.carousel').carousel({
+            interval: 1000 * 100
+        });
+    </script>
+</body>
+
+</html>
