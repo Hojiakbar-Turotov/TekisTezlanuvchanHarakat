@@ -36,22 +36,45 @@ const stylelabsstop = document.querySelector('#stylelabsstop');
 
 
 
-let ytop = 125;
-let yleft = -125;
-let ywidth = 250;
-let xtop = 250;
-let xwidth = 433;
-let sstop = 125;
-let sleft = -34;
-let swidth = 500;
-let shwidth = 20;
-let shheight = 20;
+var id = setInterval(function() {
+    chiziqy.style.top = 125 + "px";
+    chiziqy.style.left = -125 + "px";
+    chiziqy.style.width = 250 + "px";
+    chiziqx.style.top = 250 + "px";
+    chiziqx.style.width = 433 + "px";
+    chiziqs.style.top = (175 - chiziqy.value / 2) + "px";
+    chiziqs.style.left = (-63 + chiziqx.value / 3.46) + "px";
+    chiziqs.style.width = 500 + "px";
+    chiziqs.style.transform = "rotateZ(" + 30 + "deg)";
+    sharcha.style.width = 20 + "px";
+    sharcha.style.height = 20 + "px";
+    sharcha.style.top = -17 + "px";
+    // sharcha.style.animation-duration = 2 + "s";
+}, 1)
+
+// function animationch() {
+//     chiziqy.style.top = 125 + `px`;
+//     // chiziqs.style.top == (175 - chiziqy.value / 2)
+// }
+
+
+
+// let ytop = 125;
+// let yleft = -125;
+// let ywidth = 250;
+// let xtop = 250;
+// let xwidth = 433;
+// let sstop = 125;
+// let sleft = -34;
+// let swidth = 500;
+// let shwidth = 20;
+// let shheight = 20;
 let shtop = -17;
 let shleft = 0;
 let shktop = 234;
 let shkleft = 434;
 let shanimationtime = 2;
-let srotateZ = 30;
+// let srotateZ = 30;
 
 // chiziqy.onkeyup = function() {
 // return sstop = (175 - chiziqy.value / 2);
@@ -69,17 +92,6 @@ let srotateZ = 30;
 
 stylelab.innerHTML = `
 :root {
-    --ytop: ${ytop}px;
-    --yleft: ${yleft}px;
-    --ywidth: ${ywidth}px;
-    --xtop: ${xtop}px;
-    --xwidth: ${xwidth}px;
-    --sleft: ${sleft}px;
-    --swidth: ${swidth}px;
-    --stop: ${sstop}px; 
-    --srotateZ: rotateZ(${srotateZ}deg);
-    --shwidth: ${shwidth}px;
-    --shheight: ${shheight}px;
     --shtop: ${shtop}px;
     --shleft: ${shleft}px;
     --shktop: ${shktop}px;
@@ -88,8 +100,17 @@ stylelab.innerHTML = `
 }
 `;
 
-stylelabsstop.innerHTML = `
-:root {
---stop: ${sstop}px;
-}
-`;
+// stylelabsstop.innerHTML = `
+// :root {
+// --stop: ${sstop}px;
+// }
+// `;
+
+
+
+
+//     {
+//     if ((175 - chiziqy.value / 2) != chiziqs.style.top) {
+//         chiziqs.style.top == (175 - chiziqy.value / 2);
+//     }
+// }
