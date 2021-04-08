@@ -7,7 +7,6 @@ const qiymaty = document.querySelector('#qiymaty');
 const qiymatx = document.querySelector('#qiymatx');
 const qiymats = document.querySelector('#qiymats');
 const sharcharadiusi = document.querySelector('#sharcharadiusi');
-const burchak = document.querySelector('#burchak');
 
 
 
@@ -29,40 +28,68 @@ qiymatx.addEventListener('input', function() {
     chiziqx.value = qiymatx.value / 1.732
 });
 
+// 1 metrgacha balandlik mavjud
+
 
 const stylelab = document.querySelector('#stylelab');
 const stylelabsstop = document.querySelector('#stylelabsstop');
 
 
 
-var id = setInterval(function() {
-    burchak.value = (Math.atan(chiziqy.value / (chiziqx.value * 1.732)) * 180 / Math.PI).toFixed(1);
-    chiziqy.style.top = 125 + "px";
-    chiziqy.style.left = -125 + "px";
-    chiziqy.style.width = 250 + "px";
-    chiziqx.style.top = 250 + "px";
-    chiziqx.style.width = 433 + "px";
-    chiziqs.style.top = (375 - 2.5 * chiziqy.value) + "px";
-    chiziqs.style.left = (4.33 * chiziqx.value - 466) + "px";
-    chiziqs.style.width = (Math.sqrt(4.33 * 4.33 * chiziqx.value * chiziqx.value + 6.25 * chiziqy.value * chiziqy.value)).toFixed(1) + "px";
-    chiziqs.style.transform = "rotateZ(" + burchak.value + "deg)";
-    sharcha.style.width = 20 + "px";
-    sharcha.style.height = 20 + "px";
-    sharcha.style.top = -17 + "px";
-}, 1)
-
+let ytop = ;
+let yleft = -125;
+let ywidth = 250;
+let xtop = 250;
+let xwidth = 433;
+let sstop = 125;
+let sleft = -34;
+let swidth = 500;
+let shwidth = 20;
+let shheight = 20;
 let shtop = -17;
 let shleft = 0;
 let shktop = 234;
 let shkleft = 434;
 let shanimationtime = 2;
+let srotateZ = 30;
+
+// chiziqy.onkeyup = function() {
+// return sstop = (175 - chiziqy.value / 2);
+// stylelabsstop.innerHTML = `
+// :root {
+//  --stop: ${sstop}px; 
+// }
+// `;
+// return ksstop = sstop;
+// }
+// var intervalId = window.setInterval(function(){
+/// call your function here
+//   }, 5000);
+// var ksstop = null;
 
 stylelab.innerHTML = `
 :root {
+    --ytop: ${ytop}px;
+    --yleft: ${yleft}px;
+    --ywidth: ${ywidth}px;
+    --xtop: ${xtop}px;
+    --xwidth: ${xwidth}px;
+    --sleft: ${sleft}px;
+    --swidth: ${swidth}px;
+    --stop: ${sstop}px; 
+    --srotateZ: rotateZ(${srotateZ}deg);
+    --shwidth: ${shwidth}px;
+    --shheight: ${shheight}px;
     --shtop: ${shtop}px;
     --shleft: ${shleft}px;
     --shktop: ${shktop}px;
     --shkleft: ${shkleft}px;
     --shanimationtime: ${shanimationtime}s;
+}
+`;
+
+stylelabsstop.innerHTML = `
+:root {
+--stop: ${sstop}px;
 }
 `;

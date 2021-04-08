@@ -1,95 +1,160 @@
-const chiziqy = document.querySelector('#chiziqy');
-const chiziqx = document.querySelector('#chiziqx');
-const chiziqs = document.querySelector('#chiziqs');
-const sharcha = document.querySelector('#sharcha');
+let stylecss = document.getElementById('stylecss');
+let burchak = 0;
 
-const qiymaty = document.querySelector('#qiymaty');
-const qiymatx = document.querySelector('#qiymatx');
-const qiymats = document.querySelector('#qiymats');
-const sharcharadiusi = document.querySelector('#sharcharadiusi');
+function uttizgradus() {
+    stylecss.innerHTML = `
+    section# animation div# chiziqy {
+        top: 125 px;
+        left: -125 px;
+        width: 250 px;
+        transform: rotateZ(-90 deg);
+    }
 
+    section# animation div# chiziqx {
+        top: 250 px;
+        width: 433 px;
+    }
 
+    section# animation div# chiziqs {
+        top: 125 px;
+        left: -34 px;
+        width: 500 px;
+        transform: rotateZ(30 deg);
+    }
 
-
-chiziqy.addEventListener('input', function() {
-    qiymaty.value = chiziqy.value
-});
-
-qiymaty.addEventListener('input', function() {
-    chiziqy.value = qiymaty.value
-});
-
-
-chiziqx.addEventListener('input', function() {
-    qiymatx.value = 1.732 * chiziqx.value
-});
-
-qiymatx.addEventListener('input', function() {
-    chiziqx.value = qiymatx.value / 1.732
-});
-
-// 1 metrgacha balandlik mavjud
+    section# animation div# sharcha {
+        top: -17 px;
+    }
 
 
-const stylelab = document.querySelector('#stylelab');
-const stylelabsstop = document.querySelector('#stylelabsstop');
-
-
-
-let ytop = 125;
-let yleft = -125;
-let ywidth = 250;
-let xtop = 250;
-let xwidth = 433;
-let sstop = 125;
-let sleft = -34;
-let swidth = 500;
-let shwidth = 20;
-let shheight = 20;
-let shtop = -17;
-let shleft = 0;
-let shktop = 234;
-let shkleft = 434;
-let shanimationtime = 2;
-let srotateZ = 30;
-
-// chiziqy.onkeyup = function() {
-// return sstop = (175 - chiziqy.value / 2);
-// stylelabsstop.innerHTML = `
-// :root {
-//  --stop: ${sstop}px; 
-// }
-// `;
-// return ksstop = sstop;
-// }
-// var intervalId = window.setInterval(function(){
-/// call your function here
-//   }, 5000);
-// var ksstop = null;
-
-stylelab.innerHTML = `
-:root {
-    --ytop: ${ytop}px;
-    --yleft: ${yleft}px;
-    --ywidth: ${ywidth}px;
-    --xtop: ${xtop}px;
-    --xwidth: ${xwidth}px;
-    --sleft: ${sleft}px;
-    --swidth: ${swidth}px;
-    --stop: ${sstop}px; 
-    --srotateZ: rotateZ(${srotateZ}deg);
-    --shwidth: ${shwidth}px;
-    --shheight: ${shheight}px;
-    --shtop: ${shtop}px;
-    --shleft: ${shleft}px;
-    --shktop: ${shktop}px;
-    --shkleft: ${shkleft}px;
-    --shanimationtime: ${shanimationtime}s;
+    `;
+    burchak = 30;
 }
-`;
 
-stylelabsstop.innerHTML = `
-:root {
---stop: ${sstop}px;
+function qirqbeshgradus() {
+    stylecss.innerHTML = `
+    section# animation div# chiziqy {
+        top: 125 px;
+        left: -125 px;
+        width: 250 px;
+        transform: rotateZ(-90 deg);
+    }
+
+    section# animation div# chiziqx {
+        top: 250 px;
+        width: 250 px;
+    }
+
+    section# animation div# chiziqs {
+        top: 125 px;
+        left: -52 px;
+        width: 353 px;
+        transform: rotateZ(45 deg);
+    }
+
+    section# animation div# sharcha {
+        top: -17 px;
+    }
+
+
+
+    `;
+    burchak = 45;
 }
-`;
+
+function olmishgradus() {
+
+    stylecss.innerHTML = `
+    section# animation div# chiziqy {
+        top: 125 px;
+        left: -125 px;
+        width: 250 px;
+        transform: rotateZ(-90 deg);
+    }
+
+    section# animation div# chiziqx {
+        top: 250 px;
+        width: 146.75 px;
+    }
+
+    section# animation div# chiziqs {
+        top: 125 px;
+        left: -75 px;
+        width: 293.5 px;
+        transform: rotateZ(60 deg);
+    }
+
+    section# animation div# sharcha {
+        top: -17 px;
+    }
+
+
+    `;
+    burchak = 60;
+}
+
+// let vaqt = document.getElementById('styleanimation');
+
+// function boshla() {
+//     switch (burchak) {
+//         case 30:
+//             vaqt.innerHTML = `
+//             section# animation div# sharcha {
+//                 animation: sharchaanimation;
+//                 animation - duration: 2 s;
+//             }
+//             @keyframes sharchaanimation {
+//                 0 % {
+//                     top: -17 px;
+//                     left: 0 px;
+//                 }
+//                 100 % {
+//                     top: 234 px;
+//                     left: 434 px;
+//                 }
+//             }
+
+//             `;
+//             break;
+//         case 45:
+//             vaqt.innerHTML = `
+//             section# animation div# sharcha {
+//                 animation: sharchaanimation;
+//                 animation - duration: 2 s;
+//             }
+//             @keyframes sharchaanimation {
+//                 0 % {
+//                     top: -17 px;
+//                     left: 0 px;
+//                 }
+//                 100 % {
+//                     top: 234 px;
+//                     left: 251 px;
+//                 }
+//             }
+//             `;
+//             break;
+//         case 60:
+//             vaqt.innerHTML = `
+//             section# animation div# sharcha {
+//                 animation: sharchaanimation;
+//                 animation - duration: 2 s;
+//             }
+//             @keyframes sharchaanimation {
+//                 0 % {
+//                     top: -17 px;
+//                     left: 0 px;
+//                 }
+//                 100 % {
+//                     top: 234 px;
+//                     left: 146 px;
+//                 }
+//             }
+//             `;
+//             break;
+//         default:
+
+//             // Xatolik yuz berdi
+//     }
+
+// }
