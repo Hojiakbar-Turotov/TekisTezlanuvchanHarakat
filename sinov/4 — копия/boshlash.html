@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirLab</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Mavzu:Tekis tezlanuvchan harakatlanayotgan jism tezlanishini aniqlash.</h2>
+            <div class="toggle"></div>
+        </header>
+        <div class="overlay"></div>
+        <div class="text">
+            <section id="animation">
+                <input type="range" id="chiziqy" value="100">
+                <input type="range" id="chiziqx" value="100">
+                <div id="chiziqs"></div>
+                <div id="sharcha"></div>
+            </section>
+            <section id="result">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">h= </span>
+                    </div>
+                    <input id="qiymaty" type="number" class="form-control number">
+                    <div class="input-group-append">
+                        <span class="input-group-text">sm</span>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">x= </span>
+                    </div>
+                    <input id="qiymatx" type="number" class="form-control number">
+                    <div class="input-group-append">
+                        <span class="input-group-text">sm</span>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">&#945;= </span>
+                    </div>
+                    <input id="burchak" type="number" class="form-control number">
+                    <div class="input-group-append">
+                        <span class="input-group-text">&#176;</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- <ul class="social">
+            <li>
+                <a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a>
+            </li>
+        </ul> -->
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="./">Kirish</a></li>
+            <li><a href="./boshlash.html">Boshlash</a></li>
+            <li><a href="./bajarish.html">Bajarish</a></li>
+            <li><a href="./taxlil.html">Taxlil qilish</a></li>
+            <li><a href="./hulosa.html">Hulosa</a></li>
+        </ul>
+    </div>
+    <style id="stylelab"></style>
+    <!-- <style id="stylelabsstop"></style> -->
+    <style>
+        section#animation input#chiziqy {
+            position: absolute;
+            /* border: 1px solid #000; */
+            /* top: var(--ytop); */
+            /* left: var(--yleft); */
+            /* width: var(--ywidth); */
+            /* height: 5px; */
+            transform: rotateZ(-90deg);
+            z-index: 11000;
+        }
+        
+        section#animation input#chiziqx {
+            position: absolute;
+            /* border: 1px solid #000; */
+            /* top: var(--xtop); */
+            /* left: -125px; */
+            /* width: var(--xwidth); */
+            /* height: 5px; */
+            /* transform: rotateZ(90deg); */
+            z-index: 11000;
+        }
+        
+        section#animation div#chiziqs {
+            position: absolute;
+            border: 4px solid #0075ff;
+            border-radius: 5px;
+            /* top: var(--stop); */
+            /* left: var(--sleft); */
+            /* width: var(--swidth); */
+            /* height: 5px; */
+            /* transform: var(--srotateZ); */
+            z-index: 11000;
+        }
+        
+        section#animation div#sharcha {
+            position: absolute;
+            border: 1px solid #000;
+            border-radius: 50%;
+            /* width: var(--shwidth); */
+            /* height: var(--shheight); */
+            /* top: var(--shtop); */
+            background-color: #000;
+            animation: sharchaanimation;
+            animation-duration: var(--shanimationtime);
+        }
+        
+        @keyframes sharchaanimation {
+            0% {
+                top: var(--shtop);
+                left: var(--shleft);
+            }
+            100% {
+                top: var(--shktop);
+                left: var(--shkleft);
+            }
+        }
+    </style>
+
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
