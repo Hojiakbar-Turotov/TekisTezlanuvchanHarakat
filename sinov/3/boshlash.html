@@ -20,58 +20,37 @@
         <div class="overlay"></div>
         <div class="text">
             <section id="animation">
-                <div id="chiziqx"></div>
-                <div id="chiziqy"></div>
+                <input type="range" id="chiziqy" value="100">
+                <input type="range" id="chiziqx" value="100">
                 <div id="chiziqs"></div>
                 <div id="sharcha"></div>
             </section>
             <section id="result">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <span class="input-group-text">h=100sm </span>
-                            </div>
-                            <div class="col-md-3">
-                                <span class="input-group-text">x=173sm </span>
-                            </div>
-                            <div class="col-md-3">
-                                <span class="input-group-text">&#945;=30&#176; </span>
-                            </div>
-                            <div class="col-md-3">
-                                <button class="input-group-text" onclick="uttizgradus()">Tanlash</button>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <span class="input-group-text">h=100sm </span>
-                            </div>
-                            <div class="col-md-3">
-                                <span class="input-group-text">x=100sm </span>
-                            </div>
-                            <div class="col-md-3">
-                                <span class="input-group-text">&#945;=45&#176; </span>
-                            </div>
-                            <div class="col-md-3">
-                                <button class="input-group-text" onclick="qirqbeshgradus()">Tanlash</button>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <span class="input-group-text">h=100sm </span>
-                            </div>
-                            <div class="col-md-3">
-                                <span class="input-group-text">x=58.7sm </span>
-                            </div>
-                            <div class="col-md-3">
-                                <span class="input-group-text">&#945;=60&#176; </span>
-                            </div>
-                            <div class="col-md-3">
-                                <button class="input-group-text" onclick="olmishgradus()">Tanlash</button>
-                            </div>
-                        </div>
+                        <span class="input-group-text">h= </span>
+                    </div>
+                    <input id="qiymaty" type="number" class="form-control number">
+                    <div class="input-group-append">
+                        <span class="input-group-text">sm</span>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">x= </span>
+                    </div>
+                    <input id="qiymatx" type="number" class="form-control number">
+                    <div class="input-group-append">
+                        <span class="input-group-text">sm</span>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">&#945;= </span>
+                    </div>
+                    <input id="qiymatx" type="number" class="form-control number">
+                    <div class="input-group-append">
+                        <span class="input-group-text">&#176;</span>
                     </div>
                 </div>
             </section>
@@ -87,8 +66,59 @@
             <li><a href="./hulosa.html">Hulosa</a></li>
         </ul>
     </div>
-
-
+    <style id="stylelab"></style>
+    <style id="stylelabsstop"></style>
+    <style>
+        section#animation input#chiziqy {
+            position: absolute;
+            top: 125px;
+            left: var(--yleft);
+            width: var(--ywidth);
+            transform: rotateZ(-90deg);
+            z-index: 11000;
+        }
+        
+        section#animation input#chiziqx {
+            position: absolute;
+            top: var(--xtop);
+            width: var(--xwidth);
+            z-index: 11000;
+        }
+        
+        section#animation div#chiziqs {
+            position: absolute;
+            border: 4px solid #0075ff;
+            border-radius: 5px;
+            top: var(--stop);
+            left: var(--sleft);
+            width: var(--swidth);
+            transform: var(--srotateZ);
+            z-index: 11000;
+        }
+        
+        section#animation div#sharcha {
+            position: absolute;
+            border: 1px solid #000;
+            border-radius: 50%;
+            width: var(--shwidth);
+            height: var(--shheight);
+            top: var(--shtop);
+            background-color: #000;
+            animation: sharchaanimation;
+            animation-duration: var(--shanimationtime);
+        }
+        
+        @keyframes sharchaanimation {
+            0% {
+                top: var(--shtop);
+                left: var(--shleft);
+            }
+            100% {
+                top: var(--shktop);
+                left: var(--shkleft);
+            }
+        }
+    </style>
 
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="app.js"></script>

@@ -20,3 +20,19 @@ section#animation {
     height: 50vh;
     z-index: 11000;
 }
+
+section#animation div:not(#sharcha) {
+    position: absolute;
+    z-index: 11000;
+    border: 4px solid #0075ff;
+    border-radius: 5px;
+}
+
+section#animation div#sharcha {
+    position: absolute;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background-color: #000;
+    width: 20px;
+    height: 20px;
+}
