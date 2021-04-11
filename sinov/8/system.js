@@ -1,12 +1,6 @@
 let sahifaraqami = 1;
-let sahifa = document.getElementById('sahifa');
+/*let sahifa = document.getElementById('sahifa');
 let sahifa1texti = `
-<header>
-    <h2 class="logo">Mavzu:Tekis tezlanuvchan harakatlanayotgan jism tezlanishini aniqlash.</h2>
-    <div class="toggle"></div>
-</header>
-<div class="overlay"></div>
-<div class="text">
     <br><h3>Ishning maqsadi:</h3>
     <p>Qiya novdan dumalab tushayotgan sharchaning bosib o'tgan yo'li va harakat vaqtini o'lchash orqali tekis tezlanuvchan harakatlanayotgan jism tezlanishini aniqlashni o'rganish. <br> <b>Kerakli jihozlar:</b> metall nov, po'lat sharcha, shtativ,
         metall silindr, o'lchov tasmasi, sekundomer.</p>
@@ -93,19 +87,13 @@ let sahifa1texti = `
             </tr>
         </table>
     </p>
-</div>
 
 
 
 
 `;
 let sahifa2texti = `
-        <header>
-            <h2 class="logo">Mavzu:Tekis tezlanuvchan harakatlanayotgan jism tezlanishini aniqlash.</h2>
-            <div class="toggle active"></div>
-        </header>
-        <div class="overlay"></div>
-        <div class="text">
+     
             <section id="animation">
                 <div id="chiziqx"></div>
                 <div id="chiziqy"></div>
@@ -160,19 +148,23 @@ let sahifa2texti = `
                             </div>
                         </div>
                     </div>
-                </div>
   
 `;
+*/
 
 function sahifa1() {
-    sahifa.innerHTML = sahifa1texti;
+    document.getElementById("kirish").classList.remove("d-none");
+    document.getElementById("boshlash").classList.add("d-none");
     sahifaraqami = 1;
 }
 
 function sahifa2() {
-    sahifa.innerHTML = sahifa2texti;
+    document.getElementById("boshlash").classList.remove("d-none");
+    document.getElementById("kirish").classList.add("d-none");
     sahifaraqami = 2;
 }
+
+
 
 const menuToggle = document.querySelector('.toggle');
 const showcase = document.querySelector('.showcase');

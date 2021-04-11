@@ -6,8 +6,192 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VirLab</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="main.css"> -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            /* color: #fff; */
+        }
+        
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 40px 100px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header .logo {
+            /* color: #fff; */
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        
+        .toggle {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            background: url(https://i.ibb.co/HrfVRcx/menu.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+            background-position: center;
+            cursor: pointer;
+        }
+        
+        .toggle.active {
+            background: url(https://i.ibb.co/rt3HybH/close.png);
+            background-repeat: no-repeat;
+            background-size: 25px;
+            background-position: center;
+            cursor: pointer;
+        }
+        
+        .showcase {
+            position: absolute;
+            right: 0;
+            width: 100%;
+            min-height: 100vh;
+            padding: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* background: #111; */
+            transition: 0.5s;
+            z-index: 2;
+        }
+        
+        .showcase.active {
+            right: 300px;
+        }
+        
+        .showcase video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #32bdfd;
+            mix-blend-mode: overlay;
+        }
+        
+        .text {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .text p {
+            font-size: 1.1em;
+            /* color: #fff; */
+            margin: 20px 0;
+            font-weight: 400;
+            max-width: 700px;
+        }
+        
+        .text a {
+            display: inline-block;
+            font-size: 1em;
+            background: #fff;
+            padding: 10px 30px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 10px;
+            color: #111;
+            letter-spacing: 2px;
+            transition: 0.2s;
+        }
+        
+        .text a:hover {
+            letter-spacing: 6px;
+        }
+        
+        .social {
+            position: absolute;
+            z-index: 10;
+            bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .social li {
+            list-style: none;
+        }
+        
+        .social li span {
+            display: inline-block;
+            margin-right: 20px;
+            filter: invert(1);
+            transform: scale(0.5);
+            transition: 0.5s;
+        }
+        
+        .social li a:hover {
+            transform: scale(0.5) translateY(-15px);
+        }
+        
+        .menu {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .menu ul {
+            position: relative;
+        }
+        
+        .menu ul li {
+            list-style: none;
+        }
+        
+        .menu ul li span {
+            text-decoration: none;
+            font-size: 24px;
+            color: #111;
+        }
+        
+        .menu ul li span:hover {
+            color: #03a9f4;
+        }
+        
+        @media (max-width: 991px) {
+            .showcase,
+            .showcase header {
+                padding: 40px;
+            }
+            .text h2 {
+                font-size: 3em;
+            }
+            .text h3 {
+                font-size: 2em;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -18,6 +202,160 @@
         </header>
         <div class="overlay"></div>
         <div class="text">
+            <div id="kirish">
+                <br>
+                <h3>Ishning maqsadi:</h3>
+                <p>Qiya novdan dumalab tushayotgan sharchaning bosib o'tgan yo'li va harakat vaqtini o`lchash orqali tekis tezlanuvchan harakatlanayotgan jism tezlanishini aniqlashni o`rganish. <br> <b>Kerakli jihozlar:</b> metall nov, po'lat sharcha, shtativ,
+                    metall silindr, o`lchov tasmasi, sekundomer.</p>
+                <img src="./img/namuna.png" alt="bu yerda tajriba qurilmasi namunasi bor.">
+                <h2 style="text-align: center;">Ishni bajarish tartibi:</h2>
+                <p>
+                    1. Rasmda ko`rsatilgandek, metall novni shtativga o'rnating, metall silindrni novning qui uchiga joylashtiring.
+                    <br> 2. Novning yuqori uchidan qoyib yuborilgan sharcha novning qui uchidagi silindrga borib urilgunga qadar o'tgan vaqtni sekundomer yordamida o`lchang.
+                    <br> 3. Tajribani 3 marta takrorlang. Har gal sharhcaning vaqti t<sub>1</sub>, t<sub>2</sub>, t<sub>3</sub> ni o`lchang. Natijalarni jadvalga yozib boring.
+                    <br> 4. O'lchov tasmasi yordamida sharchaning bosib o`tgan s yo`lini hisoblang.
+                    <br> 5. Tekis tezlanuvchan harakatda jismning bosib o`tgan yo`l s=at<sup>2</sup>/2 formuladan tezlanish formulasi a=2s/t<sup>2</sup> bo`ladi. Tajribada o`lchangan har bir s yo`lni va har bir t<sub>1</sub>, t<sub>2</sub>, t
+                    <sub>3</sub> vaqtni birma-bir tezlanish formulasiga qoyib, a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub> tezlanishlarni hisoblang.
+                    <br> 6. a<sub>o`rt</sub>=(a<sub>1</sub>+a<sub>2</sub>+a<sub>3</sub>)/3 formula yordamida o`rtacha tezlanishini hisoblang. Olingan bu qiymat qiya novdan dumalab tushayotgan sharchaning tezlanishini ifodalaydi.
+                    <br> 7. Ushbu tajribani novning qiyaligi uch xil bo'lgan holat uchun bajaring.
+                    <br> 8. &#916;a<sub>n</sub>=|a<sub>o`rt</sub>-a<sub>n</sub>| formuladan o`rtacha xatolik topiladi.
+                    <br> 9. &#916;a<sub>o`rt</sub>=(&#916;a<sub>1</sub>+&#916;a<sub>2</sub>+&#916;a<sub>3</sub>)/3 formuladan o`rtacha absolut xatolikni hisoblang.
+                    <br> 10. &#949;=(&#916;a<sub>o`rt</sub>/a<sub>o`rt</sub>)*100% formuladan nisbiy xatolikni toping.
+                    <br> 11. Natijalarni tahlil qiling va hulosa chiqaring.
+                    <table>
+                        <tr>
+                            <td>T/r</td>
+                            <td>s, m</td>
+                            <td>t<sub>1</sub>, s</td>
+                            <td>t<sub>2</sub>, s</td>
+                            <td>t<sub>3</sub>, s</td>
+                            <td>a<sub>1</sub>, m/s<sup>2</sup></td>
+                            <td>a<sub>2</sub>, m/s<sup>2</sup></td>
+                            <td>a<sub>3</sub>, m/s<sup>2</sup></td>
+                            <td>a<sub>o`rt</sub>, m/s<sup>2</sup></td>
+                            <td>&#916;a<sub>o`rt</sub>, m/s<sup>2</sup></td>
+                            <td>&#949;, %</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="opacity: 0;">
+                            <td>00000</td>
+                            <td>0000000</td>
+                            <td>0000000</td>
+                            <td>0000000</td>
+                            <td>0000000</td>
+                            <td>000000000</td>
+                            <td>000000000</td>
+                            <td>000000000</td>
+                            <td>00000000000</td>
+                            <td>00000000000</td>
+                            <td>0000000</td>
+                        </tr>
+                    </table>
+                </p>
+            </div>
+            <div id="boshlash" class="d-none">
+                <section id="animation">
+                    <div id="chiziqx"></div>
+                    <div id="chiziqy"></div>
+                    <div id="chiziqs"></div>
+                    <div id="sharcha"></div>
+                </section>
+                <section id="result">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="input-group-text">h=100sm </span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="input-group-text">x=173sm </span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="input-group-text">&#945;=30&#176; </span>
+                                </div>
+                                <div class="col-md-3">
+                                    <button class="input-group-text" onclick="uttizgradus()">Tanlash</button>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="input-group-text">h=100sm </span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="input-group-text">x=100sm </span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="input-group-text">&#945;=45&#176; </span>
+                                </div>
+                                <div class="col-md-3">
+                                    <button class="input-group-text" onclick="qirqbeshgradus()">Tanlash</button>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="input-group-text">h=100sm </span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="input-group-text">x=58.7sm </span>
+                                </div>
+                                <div class="col-md-3">
+                                    <span class="input-group-text">&#945;=60&#176; </span>
+                                </div>
+                                <div class="col-md-3">
+                                    <button class="input-group-text" onclick="olmishgradus()">Tanlash</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+
+
+
+
+
 
         </div>
         <!-- <ul class="social">
@@ -34,14 +372,135 @@
     </section>
     <div class="menu">
         <ul>
-            <li><a href="./">Kirish</a></li>
-            <li><a href="./boshlash.html">Boshlash</a></li>
-            <li><a href="./bajarish.html">Bajarish</a></li>
-            <li><a href="./taxlil.html">Taxlil qilish</a></li>
-            <li><a href="./hulosa.html">Hulosa</a></li>
+            <li><span onclick="kirish()">Kirish</span\></li>
+            <li><span onclick="boshlash()">Boshlash</span></li>
+            <li><span onclick="bajarish()">Bajarish</span></li>
+            <li><span onclick="taxlil()">Taxlil qilish</span></li>
+            <li><span onclick="hulosa()">Hulosa</span></li>
         </ul>
     </div>
-    <script type="text/javascript" src="main.js"></script>
+    <!-- <script type="text/javascript" src="main.js"></script> -->
+    <!-- <script type="text/javascript" src="system.js"></script> -->
+    <script>
+        let sahifaraqami = 1;
+
+        function kirish() {
+            document.getElementById("kirish").classList.remove("d-none");
+            document.getElementById("boshlash").classList.add("d-none");
+            sahifaraqami = 1;
+        }
+
+        function boshlash() {
+            document.getElementById("boshlash").classList.remove("d-none");
+            document.getElementById("kirish").classList.add("d-none");
+            sahifaraqami = 2;
+        }
+    </script>
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        });
+    </script>
+    <script>
+        let stylecss = document.getElementById('stylecss');
+        let burchak = 0;
+
+        function uttizgradus() {
+            stylecss.innerHTML = `
+          section# animation div# chiziqy {
+              top: 125 px;
+              left: -125 px;
+              width: 250 px;
+              transform: rotateZ(-90 deg);
+          }
+      
+          section# animation div# chiziqx {
+              top: 250 px;
+              width: 433 px;
+          }
+      
+          section# animation div# chiziqs {
+              top: 125 px;
+              left: -34 px;
+              width: 500 px;
+              transform: rotateZ(30 deg);
+          }
+      
+          section# animation div# sharcha {
+              top: -17 px;
+          }
+      
+      
+          `;
+            burchak = 30;
+        }
+
+        function qirqbeshgradus() {
+            stylecss.innerHTML = `
+          section# animation div# chiziqy {
+              top: 125 px;
+              left: -125 px;
+              width: 250 px;
+              transform: rotateZ(-90 deg);
+          }
+      
+          section# animation div# chiziqx {
+              top: 250 px;
+              width: 250 px;
+          }
+      
+          section# animation div# chiziqs {
+              top: 125 px;
+              left: -52 px;
+              width: 353 px;
+              transform: rotateZ(45 deg);
+          }
+      
+          section# animation div# sharcha {
+              top: -17 px;
+          }
+      
+      
+      
+          `;
+            burchak = 45;
+        }
+
+        function olmishgradus() {
+
+            stylecss.innerHTML = `
+          section# animation div# chiziqy {
+              top: 125 px;
+              left: -125 px;
+              width: 250 px;
+              transform: rotateZ(-90 deg);
+          }
+      
+          section# animation div# chiziqx {
+              top: 250 px;
+              width: 146.75 px;
+          }
+      
+          section# animation div# chiziqs {
+              top: 125 px;
+              left: -75 px;
+              width: 293.5 px;
+              transform: rotateZ(60 deg);
+          }
+      
+          section# animation div# sharcha {
+              top: -17 px;
+          }
+      
+      
+          `;
+            burchak = 60;
+        }
+    </script>
 </body>
 
 </html>
