@@ -489,7 +489,185 @@ function prev() {
 }
 
 // bajarish
+let sanash = 1;
 
 function natijaOlish() {
-    tekshirish();
+    switch (burchak) {
+        case 30:
+            switch (sanash) {
+                case 1:
+                    document.getElementById('tartibRaqami1Tajriba').innerHTML = 1;
+                    document.getElementById('uzunlik1Tajriba').innerHTML = 200;
+                    tekshirish();
+                    setTimeout(function() {
+                        let aniqtezlanish = (9.81 * (Math.sin(burchak * Math.PI / 180) - 0.009 * Math.cos(burchak * Math.PI / 180)));
+                        let = aniqvaqt = (Math.sqrt(2 * 2 / aniqtezlanish));
+
+                        let mintezlanish = aniqtezlanish - 0.3 * aniqtezlanish / 100;
+                        let maxtezlanish = aniqtezlanish + 0.3 * aniqtezlanish / 100;
+
+                        let minvaqt = (Math.sqrt(2 * 2 / mintezlanish));
+                        let maxvaqt = (Math.sqrt(2 * 2 / maxtezlanish));
+
+                        document.getElementById('vaqt1Tajriba1Natija').innerHTML = (minvaqt + ((maxvaqt - minvaqt) * (Math.floor(Math.random() * 8) + 2))).toFixed(5);
+                    }, 950);
+                    sanash++;
+                    break;
+                case 2:
+                    tekshirish();
+                    // document.getElementById('tartibRaqami1Tajriba').innerHTML = 1;
+                    // document.getElementById('uzunlik1Tajriba').innerHTML = 200;
+                    setTimeout(function() {
+                        let aniqtezlanish = (9.81 * (Math.sin(burchak * Math.PI / 180) - 0.009 * Math.cos(burchak * Math.PI / 180)));
+                        let = aniqvaqt = (Math.sqrt(2 * 2 / aniqtezlanish));
+
+                        let mintezlanish = aniqtezlanish - 0.3 * aniqtezlanish / 100;
+                        let maxtezlanish = aniqtezlanish + 0.3 * aniqtezlanish / 100;
+
+                        let minvaqt = (Math.sqrt(2 * 2 / mintezlanish));
+                        let maxvaqt = (Math.sqrt(2 * 2 / maxtezlanish));
+
+                        document.getElementById('vaqt1Tajriba2Natija').innerHTML = (minvaqt + ((maxvaqt - minvaqt) * (Math.floor(Math.random() * 9) + 1))).toFixed(5);
+                    }, 950);
+                    sanash++;
+                    break;
+                case 3:
+                    // document.getElementById('tartibRaqami1Tajriba').innerHTML = 1;
+                    // document.getElementById('uzunlik1Tajriba').innerHTML = 200;
+                    tekshirish();
+                    setTimeout(function() {
+                        let aniqtezlanish = (9.81 * (Math.sin(burchak * Math.PI / 180) - 0.009 * Math.cos(burchak * Math.PI / 180)));
+                        let = aniqvaqt = (Math.sqrt(2 * 2 / aniqtezlanish));
+
+                        let mintezlanish = aniqtezlanish - 0.3 * aniqtezlanish / 100;
+                        let maxtezlanish = aniqtezlanish + 0.3 * aniqtezlanish / 100;
+
+                        let minvaqt = (Math.sqrt(2 * 2 / mintezlanish));
+                        let maxvaqt = (Math.sqrt(2 * 2 / maxtezlanish));
+
+                        document.getElementById('vaqt1Tajriba3Natija').innerHTML = (minvaqt + ((maxvaqt - minvaqt) * (Math.floor(Math.random() * 9) + 1))).toFixed(5);
+                    }, 950);
+                    sanash++;
+                    break;
+            }
+            break;
+        case 45:
+            switch (sanash) {
+                case 1:
+                    document.getElementById('tartibRaqami1Tajriba').innerHTML = 2;
+                    document.getElementById('uzunlik1Tajriba').innerHTML = 142;
+                    tekshirish();
+                    setTimeout(function() {
+                        let aniqtezlanish = (9.81 * (Math.sin(burchak * Math.PI / 180) - 0.009 * Math.cos(burchak * Math.PI / 180)));
+                        let = aniqvaqt = (Math.sqrt(2 * 1.42 / aniqtezlanish));
+
+                        let mintezlanish = aniqtezlanish - 0.3 * aniqtezlanish / 100;
+                        let maxtezlanish = aniqtezlanish + 0.3 * aniqtezlanish / 100;
+
+                        let minvaqt = (Math.sqrt(2 * 1.42 / mintezlanish));
+                        let maxvaqt = (Math.sqrt(2 * 1.42 / maxtezlanish));
+
+                        document.getElementById('vaqt1Tajriba1Natija').innerHTML = (minvaqt + ((maxvaqt - minvaqt) * (Math.floor(Math.random() * 8) + 2))).toFixed(5);
+                    }, 650);
+                    sanash++;
+                    break;
+                case 2:
+                    tekshirish();
+                    setTimeout(function() {
+                        let aniqtezlanish = (9.81 * (Math.sin(burchak * Math.PI / 180) - 0.009 * Math.cos(burchak * Math.PI / 180)));
+                        let = aniqvaqt = (Math.sqrt(2 * 1.42 / aniqtezlanish));
+
+                        let mintezlanish = aniqtezlanish - 0.3 * aniqtezlanish / 100;
+                        let maxtezlanish = aniqtezlanish + 0.3 * aniqtezlanish / 100;
+
+                        let minvaqt = (Math.sqrt(2 * 1.42 / mintezlanish));
+                        let maxvaqt = (Math.sqrt(2 * 1.42 / maxtezlanish));
+
+                        document.getElementById('vaqt1Tajriba2Natija').innerHTML = (minvaqt + ((maxvaqt - minvaqt) * (Math.floor(Math.random() * 8) + 2))).toFixed(5);
+                    }, 650);
+                    sanash++;
+                    break;
+                case 3:
+                    tekshirish();
+                    setTimeout(function() {
+                        let aniqtezlanish = (9.81 * (Math.sin(burchak * Math.PI / 180) - 0.009 * Math.cos(burchak * Math.PI / 180)));
+                        let = aniqvaqt = (Math.sqrt(2 * 1.42 / aniqtezlanish));
+
+                        let mintezlanish = aniqtezlanish - 0.3 * aniqtezlanish / 100;
+                        let maxtezlanish = aniqtezlanish + 0.3 * aniqtezlanish / 100;
+
+                        let minvaqt = (Math.sqrt(2 * 1.42 / mintezlanish));
+                        let maxvaqt = (Math.sqrt(2 * 1.42 / maxtezlanish));
+
+                        document.getElementById('vaqt1Tajriba3Natija').innerHTML = (minvaqt + ((maxvaqt - minvaqt) * (Math.floor(Math.random() * 8) + 2))).toFixed(5);
+                    }, 650);
+                    sanash++;
+                    break;
+            }
+            break;
+        case 60:
+            switch (sanash) {
+                case 1:
+                    document.getElementById('tartibRaqami1Tajriba').innerHTML = 3;
+                    document.getElementById('uzunlik1Tajriba').innerHTML = 117.4;
+                    tekshirish();
+                    setTimeout(function() {
+                        let aniqtezlanish = (9.81 * (Math.sin(burchak * Math.PI / 180) - 0.009 * Math.cos(burchak * Math.PI / 180)));
+                        let = aniqvaqt = (Math.sqrt(2 * 1.174 / aniqtezlanish));
+
+                        let mintezlanish = aniqtezlanish - 0.3 * aniqtezlanish / 100;
+                        let maxtezlanish = aniqtezlanish + 0.3 * aniqtezlanish / 100;
+
+                        let minvaqt = (Math.sqrt(2 * 1.174 / mintezlanish));
+                        let maxvaqt = (Math.sqrt(2 * 1.174 / maxtezlanish));
+
+                        document.getElementById('vaqt1Tajriba1Natija').innerHTML = (minvaqt + ((maxvaqt - minvaqt) * (Math.floor(Math.random() * 8) + 2))).toFixed(5);
+                    }, 527);
+                    sanash++;
+                    break;
+                case 2:
+                    tekshirish();
+                    setTimeout(function() {
+                        let aniqtezlanish = (9.81 * (Math.sin(burchak * Math.PI / 180) - 0.009 * Math.cos(burchak * Math.PI / 180)));
+                        let = aniqvaqt = (Math.sqrt(2 * 1.174 / aniqtezlanish));
+
+                        let mintezlanish = aniqtezlanish - 0.3 * aniqtezlanish / 100;
+                        let maxtezlanish = aniqtezlanish + 0.3 * aniqtezlanish / 100;
+
+                        let minvaqt = (Math.sqrt(2 * 1.174 / mintezlanish));
+                        let maxvaqt = (Math.sqrt(2 * 1.174 / maxtezlanish));
+
+                        document.getElementById('vaqt1Tajriba2Natija').innerHTML = (minvaqt + ((maxvaqt - minvaqt) * (Math.floor(Math.random() * 8) + 2))).toFixed(5);
+                    }, 527);
+                    sanash++;
+                    break;
+                case 3:
+                    tekshirish();
+                    setTimeout(function() {
+                        let aniqtezlanish = (9.81 * (Math.sin(burchak * Math.PI / 180) - 0.009 * Math.cos(burchak * Math.PI / 180)));
+                        let = aniqvaqt = (Math.sqrt(2 * 1.174 / aniqtezlanish));
+
+                        let mintezlanish = aniqtezlanish - 0.3 * aniqtezlanish / 100;
+                        let maxtezlanish = aniqtezlanish + 0.3 * aniqtezlanish / 100;
+
+                        let minvaqt = (Math.sqrt(2 * 1.174 / mintezlanish));
+                        let maxvaqt = (Math.sqrt(2 * 1.174 / maxtezlanish));
+
+                        document.getElementById('vaqt1Tajriba3Natija').innerHTML = (minvaqt + ((maxvaqt - minvaqt) * (Math.floor(Math.random() * 8) + 2))).toFixed(5);
+                    }, 527);
+                    sanash++;
+                    break;
+            }
+            break;
+
+
+
+
+            // if ((sanash == 1) && (burchak == 30)) {
+            //     sanash++;
+            //     document.getElementById('tartibRaqami2Tajriba').innerHTML = 1;
+            //     document.getElementById('uzunlik1Tajriba').innerHTML = 200;
+            //     document.getElementById('vaqt1Tajriba1Natija').innerHTML = (Math.sqrt(2 * 2 / (9.81 * (Math.sin(burchak * Math.PI / 180) - 0.009 * Math.cos(burchak * Math.PI / 180))))).toFixed(5);
+    }
+    // sanash++;
 }
