@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirLab</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/8144f62fc5.js" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <div id="fon"></div>
+    <div id="body">
+        <header id="header">
+            <navbar id="navbar">
+                <b> Mavzu: </b> Tekis tezlanuvchan harakatlanayotgan jism tezlanishini aniqlash.
+            </navbar>
+            <nav id="nav"></nav>
+        </header>
+        <section id="kirish">
+            <p><span>Ishning maqsadi:</span> Qiya novdan dumalab tushayotgan sharchaning bosib o'tgan yo'li va harakat vaqtini o`lchash orqali tekis tezlanuvchan harakatlanayotgan jism tezlanishini aniqlashni o`rganish.
+                <br><br> <span>Kerakli jihozlar:</span> metall nov, po'lat sharcha, shtativ, metall silindr, o`lchov tasmasi, sekundomer.
+                <br><br><img src="./img/namuna.png" alt="bu yerda tajriba qurilmasi namunasi bor.">
+                <br><br> <span style="text-align: center; display: block;">Ishni bajarish tartibi:</span> 1. Rasmda ko`rsatilgandek, metall novni shtativga o'rnating, metall silindrni novning qui uchiga joylashtiring.
+                <br> 2. Novning yuqori uchidan qoyib yuborilgan sharcha novning qui uchidagi silindrga borib urilgunga qadar o'tgan vaqtni sekundomer yordamida o`lchang.
+                <br> 3. Tajribani 3 marta takrorlang. Har gal sharhcaning vaqti t<sub>1</sub>, t<sub>2</sub>, t<sub>3</sub> ni o`lchang. Natijalarni jadvalga yozib boring.
+                <br> 4. O'lchov tasmasi yordamida sharchaning bosib o`tgan s yo`lini hisoblang.
+                <br> 5. Tekis tezlanuvchan harakatda jismning bosib o`tgan yo`l s=at<sup>2</sup>/2 formuladan tezlanish formulasi a=2s/t<sup>2</sup> bo`ladi. Tajribada o`lchangan har bir s yo`lni va har bir t<sub>1</sub>, t<sub>2</sub>, t
+                <sub>3</sub> vaqtni birma-bir tezlanish formulasiga qoyib, a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub> tezlanishlarni hisoblang.
+                <br> 6. a<sub>o`rt</sub>=(a<sub>1</sub>+a<sub>2</sub>+a<sub>3</sub>)/3 formula yordamida o`rtacha tezlanishini hisoblang. Olingan bu qiymat qiya novdan dumalab tushayotgan sharchaning tezlanishini ifodalaydi.
+                <br> 7. Ushbu tajribani novning qiyaligi uch xil bo'lgan holat uchun bajaring.
+                <br> 8. &#916;a<sub>n</sub>=|a<sub>o`rt</sub>-a<sub>n</sub>| formuladan o`rtacha xatolik topiladi.
+                <br> 9. &#916;a<sub>o`rt</sub>=(&#916;a<sub>1</sub>+&#916;a<sub>2</sub>+&#916;a<sub>3</sub>)/3 formuladan o`rtacha absolut xatolikni hisoblang.
+                <br> 10. &#949;=(&#916;a<sub>o`rt</sub>/a<sub>o`rt</sub>)*100% formuladan nisbiy xatolikni toping.
+                <br> 11. Natijalarni tahlil qiling va hulosa chiqaring.
+                <br> <br>
+                <table>
+                    <tr>
+                        <td>T/r</td>
+                        <td>s, m</td>
+                        <td>t<sub>1</sub>, s</td>
+                        <td>t<sub>2</sub>, s</td>
+                        <td>t<sub>3</sub>, s</td>
+                        <td>a<sub>1</sub>, m/s<sup>2</sup></td>
+                        <td>a<sub>2</sub>, m/s<sup>2</sup></td>
+                        <td>a<sub>3</sub>, m/s<sup>2</sup></td>
+                        <td>a<sub>o`rt</sub>, m/s<sup>2</sup></td>
+                        <td>&#916;a<sub>o`rt</sub>, m/s<sup>2</sup></td>
+                        <td>&#949;, %</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr style="opacity: 0;">
+                        <td>00000</td>
+                        <td>0000000</td>
+                        <td>0000000</td>
+                        <td>0000000</td>
+                        <td>0000000</td>
+                        <td>000000000</td>
+                        <td>000000000</td>
+                        <td>000000000</td>
+                        <td>00000000000</td>
+                        <td>00000000000</td>
+                        <td>0000000</td>
+                    </tr>
+                </table>
+            </p>
+            <div id="navigator">
+                <!-- <span id="prev" onclick="prev()">Orqaga</span> -->
+                <span id="next" onclick="next()">Oldinga</span>
+            </div>
+        </section>
+        <section id="boshlash" class="d-none">
+            <div class="d-flex">
+                <div id="animation">
+                    <div id="chiziqx"></div>
+                    <div id="chiziqy"></div>
+                    <div id="chiziqs"></div>
+                    <div id="sharcha"></div>
+                </div>
+                <div id="result">
+                    <div id="qiyalik30">
+                        <span>h=100sm </span>
+                        <span>x=173sm </span>
+                        <span>s=200sm </span>
+                        <span>&#945;=30&#176; </span>
+                        <span class="btn" onclick="uttizgradus()">Tanlash</span>
+                    </div>
+                    <div id="qiyalik45">
+                        <span>h=100sm </span>
+                        <span>x=100sm </span>
+                        <span>s=142sm </span>
+                        <span>&#945;=45&#176; </span>
+                        <span class="btn" onclick="qirqbeshgradus()">Tanlash</span>
+                    </div>
+                    <div id="qiyalik60">
+                        <span>h=100sm </span>
+                        <span>x=58.7sm </span>
+                        <span>s=117.4sm </span>
+                        <span>&#945;=60&#176; </span>
+                        <span class="btn" onclick="olmishgradus()">Tanlash</span>
+                    </div>
+                    <div id="tekshirish">
+                        <span onclick="tekshirish()">
+                        Tekshirib ko`rish
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div id="navigator">
+                <span id="prev" onclick="prev()">Orqaga</span>
+                <span id="next" onclick="next()">Oldinga</span>
+            </div>
+        </section>
+        <section id="bajarish" class="d-none">
+            <div class="d-flex">
+                <div id="animation">
+                    <div id="chiziqx"></div>
+                    <div id="chiziqy"></div>
+                    <div id="chiziqs"></div>
+                    <div id="sharcha"></div>
+                </div>
+                <div>
+                    <span onclick="natijaOlish()">Natija olish</span>
+                </div>
+            </div>
+
+            <div id="bajarishNatijalari">
+                <table>
+                    <tr>
+                        <td>T/r</td>
+                        <td>s, sm</td>
+                        <td>t<sub>1</sub>, s</td>
+                        <td>t<sub>2</sub>, s</td>
+                        <td>t<sub>3</sub>, s</td>
+                        <!-- <td>a<sub>1</sub>, m/s<sup>2</sup></td>
+                        <td>a<sub>2</sub>, m/s<sup>2</sup></td>
+                        <td>a<sub>3</sub>, m/s<sup>2</sup></td>
+                        <td>a<sub>o`rt</sub>, m/s<sup>2</sup></td>
+                        <td>&#916;a<sub>1</sub>, m/s<sup>2</sup></td>
+                        <td>&#916;a<sub>2</sub>, m/s<sup>2</sup></td>
+                        <td>&#916;a<sub>3</sub>, m/s<sup>2</sup></td>
+                        <td>&#916;a<sub>o`rt</sub>, m/s<sup>2</sup></td>
+                        <td>&#949;, %</td> -->
+                    </tr>
+
+                    <tr>
+                        <td id="tartibRaqami1Tajriba"></td>
+                        <td id="uzunlik1Tajriba"></td>
+                        <td id="vaqt1Tajriba1Natija"></td>
+                        <td id="vaqt1Tajriba2Natija"></td>
+                        <td id="vaqt1Tajriba3Natija"></td>
+                        <!-- <td id="tezlanish1Tajriba1Natija"></td>
+                        <td id="tezlanish1Tajriba2Natija"></td>
+                        <td id="tezlanish1Tajriba3Natija"></td>
+                        <td id="urtachaTezlanish1Tajriba"></td>
+                        <td id="absolutXatolik1Tajriba1Natija"></td>
+                        <td id="absolutXatolik1Tajriba2Natija"></td>
+                        <td id="absolutXatolik1Tajriba3Natija"></td>
+                        <td id="urtachaAbsolutXatolik1Tajriba"></td>
+                        <td id="nisbiyXatolik1Tajriba"></td> -->
+                    </tr>
+                    <tr>
+                        <td id="tartibRaqami2Tajriba"></td>
+                        <td id="uzunlik2Tajriba"></td>
+                        <td id="vaqt2Tajriba1Natija"></td>
+                        <td id="vaqt2Tajriba2Natija"></td>
+                        <td id="vaqt2Tajriba3Natija"></td>
+                        <!-- <td id="tezlanish2Tajriba1Natija"></td>
+                        <td id="tezlanish2Tajriba2Natija"></td>
+                        <td id="tezlanish2Tajriba3Natija"></td>
+                        <td id="urtachaTezlanish2Tajriba"></td>
+                        <td id="absolutXatolik2Tajriba1Natija"></td>
+                        <td id="absolutXatolik2Tajriba2Natija"></td>
+                        <td id="absolutXatolik2Tajriba3Natija"></td>
+                        <td id="urtachaAbsolutXatolik2Tajriba"></td>
+                        <td id="nisbiyXatolik2Tajriba"></td> -->
+                    </tr>
+                    <tr>
+                        <td id="tartibRaqami3Tajriba"></td>
+                        <td id="uzunlik3Tajriba"></td>
+                        <td id="vaqt3Tajriba1Natija"></td>
+                        <td id="vaqt3Tajriba2Natija"></td>
+                        <td id="vaqt3Tajriba3Natija"></td>
+                        <!-- <td id="tezlanish3Tajriba1Natija"></td>
+                        <td id="tezlanish3Tajriba2Natija"></td>
+                        <td id="tezlanish3Tajriba3Natija"></td>
+                        <td id="urtachaTezlanish3Tajriba"></td>
+                        <td id="absolutXatolik3Tajriba1Natija"></td>
+                        <td id="absolutXatolik3Tajriba2Natija"></td>
+                        <td id="absolutXatolik3Tajriba3Natija"></td>
+                        <td id="urtachaAbsolutXatolik3Tajriba"></td>
+                        <td id="nisbiyXatolik3Tajriba"></td> -->
+                    </tr>
+                </table>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div id="navigator">
+                <span id="prev" onclick="prev()">Orqaga</span>
+                <span id="next" onclick="next()">Oldinga</span>
+            </div>
+        </section>
+        <section id="taxlil" class="d-none">
+            salom4
+            <div id="navigator">
+                <span id="prev" onclick="prev()">Orqaga</span>
+                <span id="next" onclick="next()">Oldinga</span>
+            </div>
+        </section>
+        <section id="hulosa" class="d-none">
+            salom
+            <div id="navigator">
+                <span id="prev" onclick="prev()">Orqaga</span>
+            </div>
+        </section>
+    </div>
+    <style id="style2all">
+
+    </style>
+    <style id="stylecss"></style>
+    <style id="styleanimation">
+        section#animation div#sharcha {
+            animation: sharchaanimation;
+            animation-duration: 2s;
+        }
+    </style>
+    <footer id="footer">
+        <ul>
+            <li><span onclick="kirishfunction()">Kirish</span></li>
+            <li><span onclick="boshlashfunction()">Boshlash</span></li>
+            <li><span onclick="bajarishfunction()">Bajarish</span></li>
+            <li><span onclick="taxlilfunction()">Taxlil qilish</span></li>
+            <li><span onclick="hulosafunction()">Hulosa</span></li>
+        </ul>
+    </footer>
+    <!-- LOADER -->
+    <div class="loader">
+        <img class="loading" src="img/icon-wheel.svg" alt="">
+        <h2 class="title loader-title">Loading
+            <span class="loader-circle"></span>
+            <span class="loader-circle"></span>
+            <span class="loader-circle"></span>
+        </h2>
+    </div>
+    <!-- ---------------------------------------------------- -->
+    <script src="app.js"></script>
+</body>
+
+</html>

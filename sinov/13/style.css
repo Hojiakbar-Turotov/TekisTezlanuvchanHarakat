@@ -1,0 +1,409 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+/* header */
+
+#fon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #32bdfd;
+}
+
+#header {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar {
+    text-transform: uppercase;
+    cursor: default;
+    font-size: 25px;
+}
+
+#nav {
+    position: relative;
+    width: 50px;
+    height: 60px;
+    background: url(https://i.ibb.co/HrfVRcx/menu.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+#nav.active {
+    background: url(https://i.ibb.co/rt3HybH/close.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+}
+
+#body {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.7s;
+    z-index: 3;
+}
+
+#body.active {
+    right: 300px;
+}
+
+section {
+    position: absolute;
+    top: 110px;
+    left: 50px;
+    right: 113px;
+    bottom: 27px;
+    font-size: 24px;
+    overflow-y: auto;
+    padding-right: 50px;
+}
+
+section span {
+    font-size: 31px;
+}
+
+
+/* ******************* */
+
+
+/* menyu */
+
+#footer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s;
+    opacity: 0;
+    display: none;
+}
+
+#footer.active {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: 0.8s;
+    opacity: 1;
+}
+
+#footer ul {
+    position: relative;
+}
+
+#footer ul li {
+    list-style: none;
+}
+
+#footer ul li span {
+    text-decoration: none;
+    font-size: 24px;
+    color: #111;
+    cursor: pointer;
+}
+
+#footer ul li span:hover {
+    color: #0078af;
+}
+
+
+/* ************** */
+
+
+/* LOADER */
+
+
+/**/
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    position: fixed;
+    background-color: #24282a;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    animation: fadeOut 2s 1 forwards;
+}
+
+.loading {
+    width: 15%;
+    animation: loading 5s linear infinite;
+}
+
+.loader-title {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.loader-circle {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: #c7c5c4;
+    border-radius: 50%;
+}
+
+.loader-title {
+    font-family: serif;
+    font-size: 48px;
+    line-height: 70px;
+    font-weight: 400;
+    color: #c7c5c4;
+}
+
+.loader-circle:nth-child(1) {
+    animation: fadeIn 0.5s linear infinite;
+    animation-delay: 0.1s;
+}
+
+.loader-circle:nth-child(2) {
+    animation: fadeIn 0.5s linear infinite;
+    animation-delay: 0.2s;
+}
+
+.loader-circle:nth-child(3) {
+    animation: fadeIn 0.5s linear infinite;
+    animation-delay: 0.3s;
+}
+
+@keyframes loading {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #616368;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 6px solid #2500f9;
+}
+
+
+/*-------------------------------------------------*/
+
+
+/* table style */
+
+table {
+    border-collapse: collapse;
+}
+
+#kirish table tr td {
+    border: 1px solid #000;
+    padding: 1px 3px;
+    text-align: center;
+    height: 30px;
+}
+
+#kirish table tr:nth-child(5) td {
+    border: none;
+}
+
+
+/* ******** */
+
+
+/* navigator */
+
+#navigator {
+    position: relative;
+    font-size: 20px;
+    width: 100%;
+}
+
+#navigator span {
+    font-size: 20px;
+    position: absolute;
+    width: 80px;
+    text-align: center;
+    border: 1px solid #2500f955;
+    color: #2500f9fa;
+}
+
+#navigator span:hover {
+    color: #fffffffa;
+    background-color: #2500f9;
+}
+
+#navigator span#prev {
+    left: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#navigator span#next {
+    right: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+/* ******* */
+
+
+/* qiya tekislik va animatsiya */
+
+#boshlash {
+    font-size: 22px;
+    cursor: default;
+}
+
+#boshlash.d-none {
+    display: none;
+}
+
+#animation {
+    margin-top: 50px;
+    position: relative;
+    width: 48%;
+    height: 50vh;
+}
+
+#boshlash span {
+    font-size: 22px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 5px;
+    padding: 3px 1.5px;
+    border-radius: 3.5px;
+    background-color: #e9ecef99;
+    cursor: default;
+}
+
+#result div span:not(.btn) {
+    width: 105px;
+}
+
+#result div span.btn {
+    width: 100px;
+    margin-left: 25px;
+    cursor: pointer;
+    background-color: #e9ecefcd;
+}
+
+#result div span.btn:hover {
+    background-color: #e9ecef;
+}
+
+#result div.active span {
+    background-color: #e9ecefcd;
+}
+
+#result div#tekshirish span {
+    width: 250px;
+    text-align: center;
+    background-color: #e9ecefcd;
+    float: right;
+}
+
+#result div#tekshirish.active span {
+    cursor: pointer;
+}
+
+#result div#tekshirish.active span:hover {
+    background-color: #e9ecef;
+}
+
+
+/* *********** */
+
+
+/* bajarish */
+
+#bajarishNatijalari {
+    overflow-x: scroll;
+    margin: 50px 20px;
+    padding-bottom: 15px;
+}
+
+#bajarishNatijalari table tr {
+    display: flex;
+    /* border: 0.5px solid #000; */
+}
+
+#bajarishNatijalari table td {
+    width: 200px;
+    display: inline-block;
+    height: 40px;
+    border: 0.5px solid #000;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#bajarishNatijalari table tr td:nth-child(1) {
+    width: 40px;
+}
+
+
+/* ************* */
